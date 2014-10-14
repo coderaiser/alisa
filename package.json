@@ -1,0 +1,18 @@
+{
+  "name": "alisa",
+  "version": "0.1.0",
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
+  "description": "Crossplatform alias",
+  "homepage": "http://github.com/coderaiser/alisa-io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coderaiser/alisa-io.git"
+  },
+  "dependencies": {
+  },
+  "license": "MIT",
+  "main": "lib/alisa.js",
+  "bin": {
+    "alisa": "bin/alisa.js"
+  }
+}
