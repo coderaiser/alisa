@@ -9,6 +9,8 @@
     "url": "git://github.com/coderaiser/alisa-io.git"
   },
   "dependencies": {
+    "minimist": "^1.1.0",
+    "spawnify": "^1.2.14"
   },
   "license": "MIT",
   "bin": {
