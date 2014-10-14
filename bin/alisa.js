@@ -17,7 +17,7 @@
         break;
     
     case 'darwin':
-        exec(argv.macos);
+        exec(argv.darwin);
         break;
     
     case 'sunos':
