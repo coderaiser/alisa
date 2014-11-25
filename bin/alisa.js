@@ -26,15 +26,26 @@
     }
     
     function exec(cmd) {
-        if (cmd)
-            spawnify(cmd, function(error, json) {
-                var stdout  = json.stdout,
-                    stderr  = json.stderr;
-                
-                if (error || stderr)
-                    console.error(error || stderr);
-                else
-                    console.log(stdout);
+        var spawn;
+        
+        if (cmd) {
+            spawn = spawnify(cmd);
+            
+            spawn.on('data', function(data) {
+                console.log(data);
             });
+            
+            spawn.on('error', function(error) {
+                console.error(error.message);
+            });
+            
+            spawn.on('path', function() {
+                
+            });
+            
+            spawn.on('exit', function() {
+                spawn = null;
+            });
+        }
     }
 })();
