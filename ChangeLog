@@ -1,3 +1,12 @@
+2015.06.02, v0.3.0
+
+fix:
+- (package) alisa-io -> alisa
+
+feature:
+- (spawnify) v2.0.0
+
+
 2015.06.02, v0.2.2
 
 feature:
