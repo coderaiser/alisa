@@ -1,12 +1,12 @@
 {
   "name": "alisa-io",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "Crossplatform alias",
-  "homepage": "http://github.com/coderaiser/alisa-io",
+  "homepage": "http://github.com/coderaiser/alisa",
   "repository": {
     "type": "git",
-    "url": "git://github.com/coderaiser/alisa-io.git"
+    "url": "git://github.com/coderaiser/alisa.git"
   },
   "dependencies": {
     "minimist": "^1.1.0",
