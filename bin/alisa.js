@@ -32,7 +32,7 @@
             spawn = spawnify(cmd);
             
             spawn.on('data', function(data) {
-                console.log(data);
+                process.stdout.write(data);
             });
             
             spawn.on('error', function(error) {
