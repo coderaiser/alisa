@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "minimist": "^1.1.0",
-    "spawnify": "^2.1.1"
+    "spawnify": "^3.0.0"
   },
   "license": "MIT",
   "bin": {

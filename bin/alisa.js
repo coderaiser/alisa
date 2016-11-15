@@ -2,7 +2,7 @@
 
 'use strict';
 
-var spawnify    = require('spawnify'),
+var spawnify    = require('spawnify/legacy'),
     argv        = require('minimist')(process.argv.slice(2)),
     platform    = process.platform;
 
@@ -43,3 +43,4 @@ function exec(cmd) {
         });
     }
 }
+
