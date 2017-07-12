@@ -15,5 +15,8 @@
   "license": "MIT",
   "bin": {
     "alisa": "bin/alisa.js"
+  },
+  "engines": {
+    "node": ">=4"
   }
 }

@@ -2,9 +2,9 @@
 
 'use strict';
 
-var spawnify    = require('spawnify/legacy'),
-    argv        = require('minimist')(process.argv.slice(2)),
-    platform    = process.platform;
+const spawnify = require('spawnify/legacy');
+const argv = require('minimist')(process.argv.slice(2));
+const platform = process.platform;
 
 switch(platform) {
 case 'win32':
@@ -25,22 +25,21 @@ case 'sunos':
 }
 
 function exec(cmd) {
-    var spawn;
+    if (!cmd)
+        return;
     
-    if (cmd) {
-        spawn = spawnify(cmd);
-        
-        spawn.on('data', function(data) {
-            process.stdout.write(data);
-        });
-        
-        spawn.on('error', function(error) {
-            console.error(error.message);
-        });
-        
-        spawn.on('exit', function() {
-            spawn = null;
-        });
-    }
+    const spawn = spawnify(cmd);
+    
+    spawn.on('data', (data) => {
+        process.stdout.write(data);
+    });
+    
+    spawn.on('error', (error) => {
+        console.error(error.message);
+    });
+    
+    spawn.on('exit', () => {
+        spawn = null;
+    });
 }
 
